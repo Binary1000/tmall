@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>report</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+  	<servlet-name>qyList</servlet-name>
+  	<servlet-class>net.cnqisoft.servlet.QyList</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>qyDetails</servlet-name>
+  	<servlet-class>net.cnqisoft.servlet.QyDetails</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>qy</servlet-name>
+  	<servlet-class>net.cnqisoft.servlet.Qy</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>facilityList</servlet-name>
+  	<servlet-class>net.cnqisoft.servlet.FacilityList</servlet-class>
+  </servlet>
+  
+  
+  <servlet>
+  	<servlet-name>facilityCategory</servlet-name>
+  	<servlet-class>net.cnqisoft.servlet.FacilityCategory</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>facilityInfo</servlet-name>
+  	<servlet-class>net.cnqisoft.servlet.FacilityInfo</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>QueryFacility</servlet-name>
+  	<servlet-class>net.cnqisoft.servlet.QueryFacility</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>UpdateFacility</servlet-name>
+  	<servlet-class>net.cnqisoft.servlet.UpdateFacility</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>qyList</servlet-name>
+  	<url-pattern>/qyList</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>qyDetails</servlet-name>
+  	<url-pattern>/qyDetails</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet-mapping>
+  	<servlet-name>qy</servlet-name>
+  	<url-pattern>/qy</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>facilityList</servlet-name>
+  	<url-pattern>/facilityList</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>facilityCategory</servlet-name>
+  	<url-pattern>/facilityCategory</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>facilityInfo</servlet-name>
+  	<url-pattern>/facilityInfo</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>QueryFacility</servlet-name>
+  	<url-pattern>/queryFacility</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>UpdateFacility</servlet-name>
+  	<url-pattern>/updateFacility</url-pattern>
+  </servlet-mapping>
+  
+  
+</web-app>
